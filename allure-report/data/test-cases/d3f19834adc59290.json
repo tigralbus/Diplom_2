@@ -1,0 +1,212 @@
+{
+  "uid" : "d3f19834adc59290",
+  "name" : "Создание заказа с авторизацией",
+  "fullName" : "tests.test_create_order.TestCreateUser#test_create_order_for_authorized_user_possible",
+  "historyId" : "fa8ee1d0e9055acac049fed45953e192",
+  "time" : {
+    "start" : 1738849182771,
+    "stop" : 1738849182771,
+    "duration" : 0
+  },
+  "description" : "Создаем юзера, получаем список ингредиентов, создаем заказ, проверяем, удаляем юзера",
+  "descriptionHtml" : "<p>Создаем юзера, получаем список ингредиентов, создаем заказ, проверяем, удаляем юзера</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1738849179870,
+      "stop" : 1738849179937,
+      "duration" : 67
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "new_user_parameters",
+    "time" : {
+      "start" : 1738849180558,
+      "stop" : 1738849180559,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "disposable_order",
+    "time" : {
+      "start" : 1738849180559,
+      "stop" : 1738849182771,
+      "duration" : 2212
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создать юзера",
+      "time" : {
+        "start" : 1738849180559,
+        "stop" : 1738849180661,
+        "duration" : 102
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "new_user_parameters",
+        "value" : "{'email': 'joshua521904@kilpyavr.com', 'password': 'bqakdu', 'name': 'Jennifer_xibkg'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Получить список ингредиентов",
+      "time" : {
+        "start" : 1738849180661,
+        "stop" : 1738849180688,
+        "duration" : 27
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Создать заказ с 2 ингредиентами по индексу",
+      "time" : {
+        "start" : 1738849180688,
+        "stop" : 1738849182770,
+        "duration" : 2082
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "access_token",
+        "value" : "'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRiYjljOWVkMjgwMDAxYjU2NDhlMyIsImlhdCI6MTczODg0OTE4MCwiZXhwIjoxNzM4ODUwMzgwfQ.z5fkSn1NuCyXF3UlgIZ5nXaadXGJRlS4GQfc-3SbsTY'"
+      }, {
+        "name" : "ingredients_ids_list",
+        "value" : "['61c0c5a71d1f82001bdaaa6d', '61c0c5a71d1f82001bdaaa6f', '61c0c5a71d1f82001bdaaa70', '61c0c5a71d1f82001bdaaa71', '61c0c5a71d1f82001bdaaa72', '61c0c5a71d1f82001bdaaa6e', '61c0c5a71d1f82001bdaaa73', '61c0c5a71d1f82001bdaaa74', '61c0c5a71d1f82001bdaaa6c', '61c0c5a71d1f82001bdaaa75', '61c0c5a71d1f82001bdaaa76', '61c0c5a71d1f82001bdaaa77', '61c0c5a71d1f82001bdaaa78', '61c0c5a71d1f82001bdaaa79', '61c0c5a71d1f82001bdaaa7a']"
+      }, {
+        "name" : "index1",
+        "value" : "3"
+      }, {
+        "name" : "index2",
+        "value" : "5"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 3,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "description" : "Создаем юзера, получаем список ингредиентов, создаем заказ, проверяем, удаляем юзера",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1f2bd24399ab146e",
+      "name" : "stdout",
+      "source" : "1f2bd24399ab146e.txt",
+      "type" : "text/plain",
+      "size" : 7
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "disposable_order::0",
+    "time" : {
+      "start" : 1738849182772,
+      "stop" : 1738849183169,
+      "duration" : 397
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Удалить юзера",
+      "time" : {
+        "start" : 1738849182772,
+        "stop" : 1738849183169,
+        "duration" : 397
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "access_token",
+        "value" : "'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRiYjljOWVkMjgwMDAxYjU2NDhlMyIsImlhdCI6MTczODg0OTE4MCwiZXhwIjoxNzM4ODUwMzgwfQ.z5fkSn1NuCyXF3UlgIZ5nXaadXGJRlS4GQfc-3SbsTY'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_create_order"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCreateUser"
+  }, {
+    "name" : "host",
+    "value" : "ChuMoDan-NAST"
+  }, {
+    "name" : "thread",
+    "value" : "28940-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_create_order"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d3f19834adc59290.json",
+  "parameterValues" : [ ]
+}

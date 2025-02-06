@@ -1,0 +1,161 @@
+{
+  "uid" : "ab600975a50c4706",
+  "name" : "Создание заказа с некорректным хешем ингредиента",
+  "fullName" : "tests.test_create_order.TestCreateUser#test_create_order_wit_incorrect_ingredient_impossible",
+  "historyId" : "08c693bfa242404e18c1c00d2eea2207",
+  "time" : {
+    "start" : 1738849183790,
+    "stop" : 1738849184369,
+    "duration" : 579
+  },
+  "description" : "Создаем юзера, создаем заказ с некорректным хешем ингредиента, проверяем, удаляем юзера",
+  "descriptionHtml" : "<p>Создаем юзера, создаем заказ с некорректным хешем ингредиента, проверяем, удаляем юзера</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1738849179870,
+      "stop" : 1738849179937,
+      "duration" : 67
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "new_user_parameters",
+    "time" : {
+      "start" : 1738849183788,
+      "stop" : 1738849183789,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Создаем юзера, создаем заказ с некорректным хешем ингредиента, проверяем, удаляем юзера",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создать юзера для получения accessToken",
+      "time" : {
+        "start" : 1738849183790,
+        "stop" : 1738849183882,
+        "duration" : 92
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "new_user_parameters",
+        "value" : "{'email': 'stephen839477@kilpyavr.com', 'password': 'mlgfwc', 'name': 'Tyler_sjrhv'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Создать заказ со всеми ингредиентами из списка",
+      "time" : {
+        "start" : 1738849183882,
+        "stop" : 1738849183907,
+        "duration" : 25
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "access_token",
+        "value" : "'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRiYjlmOWVkMjgwMDAxYjU2NDhlOCIsImlhdCI6MTczODg0OTE4MywiZXhwIjoxNzM4ODUwMzgzfQ.PzGAoILER-GRXkm3yN8WVB3K-v7jnk34Mh2iFfqrER8'"
+      }, {
+        "name" : "ingredients_ids_list",
+        "value" : "['661c0c5a71d1f82001bdaaa6dnot111real11hash']"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Удалить юзера",
+      "time" : {
+        "start" : 1738849183907,
+        "stop" : 1738849184368,
+        "duration" : 461
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "access_token",
+        "value" : "'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRiYjlmOWVkMjgwMDAxYjU2NDhlOCIsImlhdCI6MTczODg0OTE4MywiZXhwIjoxNzM4ODUwMzgzfQ.PzGAoILER-GRXkm3yN8WVB3K-v7jnk34Mh2iFfqrER8'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "8036cea98cc2753c",
+      "name" : "stdout",
+      "source" : "8036cea98cc2753c.txt",
+      "type" : "text/plain",
+      "size" : 7
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_create_order"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCreateUser"
+  }, {
+    "name" : "host",
+    "value" : "ChuMoDan-NAST"
+  }, {
+    "name" : "thread",
+    "value" : "28940-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_create_order"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ab600975a50c4706.json",
+  "parameterValues" : [ ]
+}

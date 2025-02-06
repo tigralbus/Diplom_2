@@ -1,0 +1,194 @@
+{
+  "uid" : "b7e77f8515bb10b9",
+  "name" : "Логин юзера с неверным емейлом/паролем",
+  "fullName" : "tests.test_user_login.TestLoginUser#test_login_user_incorrect_parameters_impossible",
+  "historyId" : "9edab11f418284181b49cb4c473fe264",
+  "time" : {
+    "start" : 1738849191640,
+    "stop" : 1738849191734,
+    "duration" : 94
+  },
+  "description" : "Создаем юзера, логинимся под ним под неправильным емейлом/паролем, проверяем ошибку, удаляем юзера",
+  "descriptionHtml" : "<p>Создаем юзера, логинимся под ним под неправильным емейлом/паролем, проверяем ошибку, удаляем юзера</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1738849179870,
+      "stop" : 1738849179937,
+      "duration" : 67
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "disposable_user",
+    "time" : {
+      "start" : 1738849191538,
+      "stop" : 1738849191639,
+      "duration" : 101
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создать юзера",
+      "time" : {
+        "start" : 1738849191538,
+        "stop" : 1738849191639,
+        "duration" : 101
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "new_user_parameters",
+        "value" : "{'email': 'benjamin842110@kilpyavr.com', 'password': 'cucvag', 'name': 'Rebecca_rdkne'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  }, {
+    "name" : "new_user_parameters",
+    "time" : {
+      "start" : 1738849191536,
+      "stop" : 1738849191538,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Создаем юзера, логинимся под ним под неправильным емейлом/паролем, проверяем ошибку, удаляем юзера",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Логин юзера",
+      "time" : {
+        "start" : 1738849191640,
+        "stop" : 1738849191734,
+        "duration" : 94
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "'benjamin842110@kilpyavr.com'"
+      }, {
+        "name" : "password",
+        "value" : "'wrong_value'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "d96f5ddc66b55c6d",
+      "name" : "stdout",
+      "source" : "d96f5ddc66b55c6d.txt",
+      "type" : "text/plain",
+      "size" : 7
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "disposable_user::0",
+    "time" : {
+      "start" : 1738849191735,
+      "stop" : 1738849192162,
+      "duration" : 427
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Удалить юзера",
+      "time" : {
+        "start" : 1738849191735,
+        "stop" : 1738849192162,
+        "duration" : 427
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "access_token",
+        "value" : "'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRiYmE3OWVkMjgwMDAxYjU2NDhmNyIsImlhdCI6MTczODg0OTE5MSwiZXhwIjoxNzM4ODUwMzkxfQ.1cvpyoDrxeBfGS6Vqtq-JsdrlQKxECiN0i95wGHOAD0'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_user_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLoginUser"
+  }, {
+    "name" : "host",
+    "value" : "ChuMoDan-NAST"
+  }, {
+    "name" : "thread",
+    "value" : "28940-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_user_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "wrong_key",
+    "value" : "'password'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b7e77f8515bb10b9.json",
+  "parameterValues" : [ "'password'" ]
+}

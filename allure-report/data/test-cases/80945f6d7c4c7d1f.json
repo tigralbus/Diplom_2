@@ -1,0 +1,119 @@
+{
+  "uid" : "80945f6d7c4c7d1f",
+  "name" : "Создание заказа без авторизации",
+  "fullName" : "tests.test_create_order.TestCreateUser#test_create_order_without_authorization_impossible",
+  "historyId" : "f098849fdba7f78b3aa332ca5cc90e46",
+  "time" : {
+    "start" : 1738849183172,
+    "stop" : 1738849183232,
+    "duration" : 60
+  },
+  "description" : "Создаем заказ без авторизации, проверяем",
+  "descriptionHtml" : "<p>Создаем заказ без авторизации, проверяем</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1738849179870,
+      "stop" : 1738849179937,
+      "duration" : 67
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Создаем заказ без авторизации, проверяем",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Получить список ингредиентов",
+      "time" : {
+        "start" : 1738849183173,
+        "stop" : 1738849183201,
+        "duration" : 28
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Создать заказ со всеми ингредиентами из списка",
+      "time" : {
+        "start" : 1738849183201,
+        "stop" : 1738849183232,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "access_token",
+        "value" : "''"
+      }, {
+        "name" : "ingredients_ids_list",
+        "value" : "['61c0c5a71d1f82001bdaaa6d', '61c0c5a71d1f82001bdaaa6f', '61c0c5a71d1f82001bdaaa70', '61c0c5a71d1f82001bdaaa71', '61c0c5a71d1f82001bdaaa72', '61c0c5a71d1f82001bdaaa6e', '61c0c5a71d1f82001bdaaa73', '61c0c5a71d1f82001bdaaa74', '61c0c5a71d1f82001bdaaa6c', '61c0c5a71d1f82001bdaaa75', '61c0c5a71d1f82001bdaaa76', '61c0c5a71d1f82001bdaaa77', '61c0c5a71d1f82001bdaaa78', '61c0c5a71d1f82001bdaaa79', '61c0c5a71d1f82001bdaaa7a']"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_create_order"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCreateUser"
+  }, {
+    "name" : "host",
+    "value" : "ChuMoDan-NAST"
+  }, {
+    "name" : "thread",
+    "value" : "28940-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_create_order"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "80945f6d7c4c7d1f.json",
+  "parameterValues" : [ ]
+}

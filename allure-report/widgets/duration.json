@@ -1,0 +1,161 @@
+[ {
+  "uid" : "bbb164872fa53907",
+  "name" : "Авторизованный юзер изменение данных",
+  "time" : {
+    "start" : 1738849179939,
+    "stop" : 1738849180524,
+    "duration" : 585
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6a959b0f117b3172",
+  "name" : "Регистрация юзера без обязательного поля",
+  "time" : {
+    "start" : 1738849185453,
+    "stop" : 1738849185476,
+    "duration" : 23
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ab600975a50c4706",
+  "name" : "Создание заказа с некорректным хешем ингредиента",
+  "time" : {
+    "start" : 1738849183790,
+    "stop" : 1738849184369,
+    "duration" : 579
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e79dbbc35820c6e8",
+  "name" : "Логин юзера с неверным емейлом/паролем",
+  "time" : {
+    "start" : 1738849191083,
+    "stop" : 1738849191108,
+    "duration" : 25
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "349e51444b2ab567",
+  "name" : "Регистрация юзера",
+  "time" : {
+    "start" : 1738849184474,
+    "stop" : 1738849184474,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d7e2eb1cc60648b9",
+  "name" : "Регистрация уже существующего юзера",
+  "time" : {
+    "start" : 1738849184865,
+    "stop" : 1738849185377,
+    "duration" : 512
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d3f19834adc59290",
+  "name" : "Создание заказа с авторизацией",
+  "time" : {
+    "start" : 1738849182771,
+    "stop" : 1738849182771,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b93625064adf47c4",
+  "name" : "Получение списка заказов без авторизации",
+  "time" : {
+    "start" : 1738849190344,
+    "stop" : 1738849190367,
+    "duration" : 23
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3a8e991ecc8cf21",
+  "name" : "Регистрация юзера без обязательного поля",
+  "time" : {
+    "start" : 1738849185382,
+    "stop" : 1738849185409,
+    "duration" : 27
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b2c4671b61f244f1",
+  "name" : "Создание заказа без ингредиентов",
+  "time" : {
+    "start" : 1738849183235,
+    "stop" : 1738849183785,
+    "duration" : 550
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c852da8453fe6246",
+  "name" : "Получение списка заказов авторизованного юзера",
+  "time" : {
+    "start" : 1738849185480,
+    "stop" : 1738849190339,
+    "duration" : 4859
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8cb7e01d823be1bd",
+  "name" : "Регистрация юзера без обязательного поля",
+  "time" : {
+    "start" : 1738849185423,
+    "stop" : 1738849185448,
+    "duration" : 25
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "80945f6d7c4c7d1f",
+  "name" : "Создание заказа без авторизации",
+  "time" : {
+    "start" : 1738849183172,
+    "stop" : 1738849183232,
+    "duration" : 60
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b7e77f8515bb10b9",
+  "name" : "Логин юзера с неверным емейлом/паролем",
+  "time" : {
+    "start" : 1738849191640,
+    "stop" : 1738849191734,
+    "duration" : 94
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "88ea447115ee4957",
+  "name" : "Логин юзера",
+  "time" : {
+    "start" : 1738849190473,
+    "stop" : 1738849190570,
+    "duration" : 97
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e76a64d9acc0e901",
+  "name" : "Неавторизованный юзер: изменение данных",
+  "time" : {
+    "start" : 1738849180529,
+    "stop" : 1738849180555,
+    "duration" : 26
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
