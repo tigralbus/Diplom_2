@@ -12,26 +12,17 @@ class RandomHelper:
         random_string = ''.join(random.choice(letters) for i in range(length))
         return random_string
 
-
     @staticmethod
     def random_name():
         fake = Faker()
         fake_name = fake.first_name()
         random_string = RandomHelper().random_string(5)
         name = f'{fake_name}_{random_string}'
-        print(name)
         return name
 
     @staticmethod
     def random_email():
         fake = Faker()
-        num = str(random.randint(111, 999))
-        email = f'{fake.first_name().lower()}{num}@ya.com'
-        print(email)
+        num = f'{str(random.randint(11111, 999999))}'
+        email = f'{fake.first_name().lower()}{num}@kilpyavr.com'
         return email
-
-
-
-# random_sample = RandomHelper()
-# random_sample.random_email()
-# random_sample.random_string(5)
