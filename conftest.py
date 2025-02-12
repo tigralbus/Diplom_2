@@ -17,7 +17,6 @@ def new_user_parameters():
         "password": password,
         "name": name
     }
-    print(password)
     return parameters
 
 

@@ -15,7 +15,7 @@ class TestLoginUser:
         assert response_login.json()["success"] == True
         assert len(response.json()) == 4
 
-    @allure.title('Логин юзера с неверным емейлом/паролем') #updated
+    @allure.title('Логин юзера с неверным емейлом/паролем')  # updated
     @allure.description(
         'Создаем юзера, логинимся под ним под неправильным емейлом/паролем, проверяем ошибку, удаляем юзера')
     @pytest.mark.parametrize("wrong_key", ["email", "password"])
@@ -26,6 +26,6 @@ class TestLoginUser:
         new_courier_parameters_wrong_key[wrong_key] = 'wrong_value'
         # Логинимся с неправильными параметрами
         response = UserRoutes().login_user(new_courier_parameters_wrong_key.get("email"),
-                                          new_courier_parameters_wrong_key.get("password"))
+                                           new_courier_parameters_wrong_key.get("password"))
         assert response.status_code == 401, f"Ошибка: ожидается статус ответа 404, но получили '{response.status_code}'"
         assert response.json()["message"] == Constants.USER_WRONG_KEY_MSG

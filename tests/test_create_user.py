@@ -15,7 +15,8 @@ class TestCreateUser:
         assert len(response.json()) == 4
 
     @allure.title('Регистрация уже существующего юзера')
-    @allure.description('Создаем юзера, создаем повторно юзера с теми же параметрами, удаляем юзера, проверяем сообщение об ошибке')
+    @allure.description(
+        'Создаем юзера, создаем повторно юзера с теми же параметрами, удаляем юзера, проверяем сообщение об ошибке')
     def test_create_existing_user_impossible(self, new_user_parameters):
         access_token = UserRoutes().create_user_return_access_token(new_user_parameters)
         response = UserRoutes().create_user(new_user_parameters)
@@ -28,7 +29,8 @@ class TestCreateUser:
     @allure.description('Создаем юзера требуемого без поля, проверяем сообщение об ошибке')
     @pytest.mark.parametrize("missing_key", ["name", "password", "email"])
     def test_create_user_without_required_data_impossible(self, new_user_parameters, missing_key):
-        user_parameters_missing_key = {k: v for k, v in new_user_parameters.items() if k != missing_key}  # копируем отфильтрованный словарь через генератор словаря
+        user_parameters_missing_key = {k: v for k, v in new_user_parameters.items() if
+                                       k != missing_key}  # копируем отфильтрованный словарь через генератор словаря
         response = UserRoutes().create_user(user_parameters_missing_key)
         assert response.status_code == 403, f"Ошибка: ожидается статус ответа 403, но получили '{response.status_code}'"
         assert response.json()['success'] == False

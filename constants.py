@@ -5,4 +5,3 @@ class Constants:
     USER_WRONG_KEY_MSG = "email or password are incorrect"
     USER_NOT_AUTHORIZED = "You should be authorised"
     NO_INGREDIENTS_MSG = "Ingredient ids must be provided"
-
