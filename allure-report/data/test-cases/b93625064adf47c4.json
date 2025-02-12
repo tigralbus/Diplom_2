@@ -1,0 +1,122 @@
+{
+  "uid" : "b93625064adf47c4",
+  "name" : "Получение списка заказов без авторизации",
+  "fullName" : "tests.test_get_user_orders.TestCreateUser#test_get_orders_list_without_auth_impossible",
+  "historyId" : "f1b63735b16904b976723b85fda5e8ce",
+  "time" : {
+    "start" : 1738849190344,
+    "stop" : 1738849190367,
+    "duration" : 23
+  },
+  "description" : "Создаем юзера, получаем список ингредиентов, создаем 2 заказа юзеру, получаем список заказов, проверяем, удаляем юзера",
+  "descriptionHtml" : "<p>Создаем юзера, получаем список ингредиентов, создаем 2 заказа юзеру, получаем список заказов, проверяем, удаляем юзера</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1738849179870,
+      "stop" : 1738849179937,
+      "duration" : 67
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "new_user_parameters",
+    "time" : {
+      "start" : 1738849190342,
+      "stop" : 1738849190343,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Создаем юзера, получаем список ингредиентов, создаем 2 заказа юзеру, получаем список заказов, проверяем, удаляем юзера",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Получить список заказов пользователя",
+      "time" : {
+        "start" : 1738849190344,
+        "stop" : 1738849190367,
+        "duration" : 23
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "access_token",
+        "value" : "''"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "8870b15eb5b14f47",
+      "name" : "stdout",
+      "source" : "8870b15eb5b14f47.txt",
+      "type" : "text/plain",
+      "size" : 7
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_get_user_orders"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCreateUser"
+  }, {
+    "name" : "host",
+    "value" : "ChuMoDan-NAST"
+  }, {
+    "name" : "thread",
+    "value" : "28940-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_get_user_orders"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b93625064adf47c4.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,128 @@
+{
+  "uid" : "e76a64d9acc0e901",
+  "name" : "Неавторизованный юзер: изменение данных",
+  "fullName" : "tests.test_change_user_data.TestChangeUserData#test_login_courier_incorrect_parameters",
+  "historyId" : "d82e23c0deb2a2ee2e6ed7d0f97922ef",
+  "time" : {
+    "start" : 1738849180529,
+    "stop" : 1738849180555,
+    "duration" : 26
+  },
+  "description" : "Не авторизуемся, меняем данные юзера, проверяем ответ",
+  "descriptionHtml" : "<p>Не авторизуемся, меняем данные юзера, проверяем ответ</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1738849179870,
+      "stop" : 1738849179937,
+      "duration" : 67
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "new_user_parameters",
+    "time" : {
+      "start" : 1738849180527,
+      "stop" : 1738849180528,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Не авторизуемся, меняем данные юзера, проверяем ответ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Изменить данные юзера",
+      "time" : {
+        "start" : 1738849180529,
+        "stop" : 1738849180555,
+        "duration" : 26
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "access_token",
+        "value" : "''"
+      }, {
+        "name" : "name",
+        "value" : "'Caitlin_uepty'"
+      }, {
+        "name" : "email",
+        "value" : "'julie544849@kilpyavr.com'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "ce62d7f1c074793",
+      "name" : "stdout",
+      "source" : "ce62d7f1c074793.txt",
+      "type" : "text/plain",
+      "size" : 7
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_change_user_data"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestChangeUserData"
+  }, {
+    "name" : "host",
+    "value" : "ChuMoDan-NAST"
+  }, {
+    "name" : "thread",
+    "value" : "28940-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_change_user_data"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e76a64d9acc0e901.json",
+  "parameterValues" : [ ]
+}

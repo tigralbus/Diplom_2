@@ -1,0 +1,158 @@
+{
+  "uid" : "d7e2eb1cc60648b9",
+  "name" : "Регистрация уже существующего юзера",
+  "fullName" : "tests.test_create_user.TestCreateUser#test_create_existing_user_impossible",
+  "historyId" : "c1d6de22179558f36893945084aadf8b",
+  "time" : {
+    "start" : 1738849184865,
+    "stop" : 1738849185377,
+    "duration" : 512
+  },
+  "description" : "Создаем юзера, создаем повторно юзера с теми же параметрами, удаляем юзера, проверяем сообщение об ошибке",
+  "descriptionHtml" : "<p>Создаем юзера, создаем повторно юзера с теми же параметрами, удаляем юзера, проверяем сообщение об ошибке</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1738849179870,
+      "stop" : 1738849179937,
+      "duration" : 67
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "new_user_parameters",
+    "time" : {
+      "start" : 1738849184863,
+      "stop" : 1738849184865,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Создаем юзера, создаем повторно юзера с теми же параметрами, удаляем юзера, проверяем сообщение об ошибке",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создать юзера для получения accessToken",
+      "time" : {
+        "start" : 1738849184865,
+        "stop" : 1738849184958,
+        "duration" : 93
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "new_user_parameters",
+        "value" : "{'email': 'karen766294@kilpyavr.com', 'password': 'annhtu', 'name': 'Julie_vaayk'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Создать юзера",
+      "time" : {
+        "start" : 1738849184958,
+        "stop" : 1738849184983,
+        "duration" : 25
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "new_user_parameters",
+        "value" : "{'email': 'karen766294@kilpyavr.com', 'password': 'annhtu', 'name': 'Julie_vaayk'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Удалить юзера",
+      "time" : {
+        "start" : 1738849184983,
+        "stop" : 1738849185376,
+        "duration" : 393
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "access_token",
+        "value" : "'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRiYmEwOWVkMjgwMDAxYjU2NDhlYyIsImlhdCI6MTczODg0OTE4NCwiZXhwIjoxNzM4ODUwMzg0fQ.qFuEHmNdXqV7Bnh3Pn5jqRS4oJ-zKzPatKd6CXD3iWU'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "27996342114840f7",
+      "name" : "stdout",
+      "source" : "27996342114840f7.txt",
+      "type" : "text/plain",
+      "size" : 7
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_create_user"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCreateUser"
+  }, {
+    "name" : "host",
+    "value" : "ChuMoDan-NAST"
+  }, {
+    "name" : "thread",
+    "value" : "28940-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_create_user"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d7e2eb1cc60648b9.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,227 @@
+{
+  "uid" : "c852da8453fe6246",
+  "name" : "Получение списка заказов авторизованного юзера",
+  "fullName" : "tests.test_get_user_orders.TestCreateUser#test_get_orders_list_for_user_possible",
+  "historyId" : "d4e29df4e3db8b2778f75ccee8d8117a",
+  "time" : {
+    "start" : 1738849185480,
+    "stop" : 1738849190339,
+    "duration" : 4859
+  },
+  "description" : "Создаем юзера, получаем список ингредиентов, создаем 2 заказа юзеру, получаем список заказов, проверяем, удаляем юзера",
+  "descriptionHtml" : "<p>Создаем юзера, получаем список ингредиентов, создаем 2 заказа юзеру, получаем список заказов, проверяем, удаляем юзера</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1738849179870,
+      "stop" : 1738849179937,
+      "duration" : 67
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "new_user_parameters",
+    "time" : {
+      "start" : 1738849185479,
+      "stop" : 1738849185480,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Создаем юзера, получаем список ингредиентов, создаем 2 заказа юзеру, получаем список заказов, проверяем, удаляем юзера",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создать юзера для получения accessToken",
+      "time" : {
+        "start" : 1738849185481,
+        "stop" : 1738849185580,
+        "duration" : 99
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "new_user_parameters",
+        "value" : "{'email': 'tyrone791812@kilpyavr.com', 'password': 'orcyuw', 'name': 'Jessica_chepm'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Получить список ингредиентов",
+      "time" : {
+        "start" : 1738849185580,
+        "stop" : 1738849185609,
+        "duration" : 29
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Создать заказ с 2 ингредиентами по индексу",
+      "time" : {
+        "start" : 1738849185609,
+        "stop" : 1738849187662,
+        "duration" : 2053
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "access_token",
+        "value" : "'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRiYmExOWVkMjgwMDAxYjU2NDhlZSIsImlhdCI6MTczODg0OTE4NSwiZXhwIjoxNzM4ODUwMzg1fQ.BfEPt-UPk_fu8OGkTS_AXC8w7NCu7Bvo2iJGwejJJTs'"
+      }, {
+        "name" : "ingredients_ids_list",
+        "value" : "['61c0c5a71d1f82001bdaaa6d', '61c0c5a71d1f82001bdaaa6f', '61c0c5a71d1f82001bdaaa70', '61c0c5a71d1f82001bdaaa71', '61c0c5a71d1f82001bdaaa72', '61c0c5a71d1f82001bdaaa6e', '61c0c5a71d1f82001bdaaa73', '61c0c5a71d1f82001bdaaa74', '61c0c5a71d1f82001bdaaa6c', '61c0c5a71d1f82001bdaaa75', '61c0c5a71d1f82001bdaaa76', '61c0c5a71d1f82001bdaaa77', '61c0c5a71d1f82001bdaaa78', '61c0c5a71d1f82001bdaaa79', '61c0c5a71d1f82001bdaaa7a']"
+      }, {
+        "name" : "index1",
+        "value" : "5"
+      }, {
+        "name" : "index2",
+        "value" : "6"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Создать заказ с 2 ингредиентами по индексу",
+      "time" : {
+        "start" : 1738849187662,
+        "stop" : 1738849189647,
+        "duration" : 1985
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "access_token",
+        "value" : "'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRiYmExOWVkMjgwMDAxYjU2NDhlZSIsImlhdCI6MTczODg0OTE4NSwiZXhwIjoxNzM4ODUwMzg1fQ.BfEPt-UPk_fu8OGkTS_AXC8w7NCu7Bvo2iJGwejJJTs'"
+      }, {
+        "name" : "ingredients_ids_list",
+        "value" : "['61c0c5a71d1f82001bdaaa6d', '61c0c5a71d1f82001bdaaa6f', '61c0c5a71d1f82001bdaaa70', '61c0c5a71d1f82001bdaaa71', '61c0c5a71d1f82001bdaaa72', '61c0c5a71d1f82001bdaaa6e', '61c0c5a71d1f82001bdaaa73', '61c0c5a71d1f82001bdaaa74', '61c0c5a71d1f82001bdaaa6c', '61c0c5a71d1f82001bdaaa75', '61c0c5a71d1f82001bdaaa76', '61c0c5a71d1f82001bdaaa77', '61c0c5a71d1f82001bdaaa78', '61c0c5a71d1f82001bdaaa79', '61c0c5a71d1f82001bdaaa7a']"
+      }, {
+        "name" : "index1",
+        "value" : "1"
+      }, {
+        "name" : "index2",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Получить список заказов пользователя",
+      "time" : {
+        "start" : 1738849189647,
+        "stop" : 1738849189950,
+        "duration" : 303
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "access_token",
+        "value" : "'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRiYmExOWVkMjgwMDAxYjU2NDhlZSIsImlhdCI6MTczODg0OTE4NSwiZXhwIjoxNzM4ODUwMzg1fQ.BfEPt-UPk_fu8OGkTS_AXC8w7NCu7Bvo2iJGwejJJTs'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Удалить юзера",
+      "time" : {
+        "start" : 1738849189950,
+        "stop" : 1738849190339,
+        "duration" : 389
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "access_token",
+        "value" : "'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTRiYmExOWVkMjgwMDAxYjU2NDhlZSIsImlhdCI6MTczODg0OTE4NSwiZXhwIjoxNzM4ODUwMzg1fQ.BfEPt-UPk_fu8OGkTS_AXC8w7NCu7Bvo2iJGwejJJTs'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "3aac128fc2f4fb3",
+      "name" : "stdout",
+      "source" : "3aac128fc2f4fb3.txt",
+      "type" : "text/plain",
+      "size" : 7
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 6,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_get_user_orders"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCreateUser"
+  }, {
+    "name" : "host",
+    "value" : "ChuMoDan-NAST"
+  }, {
+    "name" : "thread",
+    "value" : "28940-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_get_user_orders"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c852da8453fe6246.json",
+  "parameterValues" : [ ]
+}
